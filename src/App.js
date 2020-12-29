@@ -1,24 +1,26 @@
-import './App.css';
-import Footer from './Footer';
-import Header from './Header';
-import Home from './Home';
+import "./App.css";
+import Footer from "./Footer";
+import Header from "./Header";
+import Home from "./Home";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import SearchPage from "./SearchPage";
 
 function App() {
   return (
     //BEM
     <div className="App">
-      <Header/>
-      <Home/>
-      <Footer/>
-     {/* Home */}
-        {/* Header */}
-        {/* Banner */}
-          {/* Search */}
-        {/* Cards */}
-        {/* Footer */}
-      {/* Search Page */}
-        {/* ... */}
-
+      <Router>
+      <Header />
+        <Switch>
+        <Route path="/search">  <SearchPage/>  </Route>
+        <Route path="/"> <Home /> </Route>
+        
+       
+       
+        </Switch>
+        
+        <Footer />
+      </Router>
     </div>
   );
 }
