@@ -21,7 +21,7 @@
     align-items: center;
     max-width: fit-content;
     padding: 10px;
-    height: 30px;
+    height: 20px;
     border: 1px solid lightgray;
     border-radius: 999px;
   }
@@ -30,13 +30,13 @@
     border: none;
     padding: 10px;
     outline-width: 0;
-    /* width: 250px; */
+    width: 250px;
   }
   
   .header__right {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 15vw;
+    width: 20vw;
     margin-right: 80px;
   }
