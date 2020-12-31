@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import "./Banner.css";
 import { Button } from "@material-ui/core";
 import Search from './Search';
+import {useHistory} from "react-router-dom";
 const Banner = () => {
     const [showSearch, setShowSearch] = useState(false);
     const history = useHistory();
